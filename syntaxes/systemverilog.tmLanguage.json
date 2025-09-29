@@ -2,56 +2,80 @@
   "scopeName": "source.sv",
   "patterns": [
     {
-      "match": "\\b(module|endmodule|task|endtask|function|endfunction|generate|endgenerate|primitive|endprimitive)\\b",
-      "name": "keyword.control.systemverilog"
+      "include": "#blocks"
     },
     {
-      "match": "\\b(begin|end|fork|join|join_any|join_none)\\b",
-      "name": "keyword.control.systemverilog"
+      "include": "#items"
     },
     {
-      "match": "\\b(always|assign|always_ff|always_comb)\\b",
-      "name": "keyword.control.systemverilog"
+      "include": "#Control flow"
     },
     {
-      "match": "\\b(input|output|inout|logic|integer)\\b",
-      "name": "keyword.control.systemverilog"
+      "include": "#data structure"
     },
     {
-      "match": "\\b(input|output|inout|logic|integer)\\b",
-      "name": "keyword.control.systemverilog"
+      "include": "#function"
     },
     {
-      "match": "\\b(defparam|parameter)\\b",
-      "name": "keyword.control.systemverilog"
+      "include": "#comment signal"
     },
     {
-      "match": "\\b(posedge|negedge|event)\\b",
-      "name": "keyword.control.systemverilog"
-    },
-    {
-      "match": "\\b(if|else|case|endcase|casex|casez|default|for)\\b",
-      "name": "keyword.control.systemverilog"
-    },
-    {
-      "match": "\\b(forever)\\b",
-      "name": "keyword.control.systemverilog"
-    },
-    {
-      "match": "\\b(highz0|highz1|)\\b",
-      "name": "keyword.control.systemverilog"
-    },
-    {
-      "match": "\\b(repeat|initial|wait)\\b",
-      "name": "keyword.control.systemverilog"
-    },
-    {
-      "match": "\\$(finish|stop)\\b",
-      "name": "keyword.control.systemverilog"
-    },
-    {
-      "match": "//.*$",
-      "name": "comment.line.double-slash.systemverilog"
+      "include": "#comment multi"
     }
-  ]
+  ],
+  "repository": {
+    "blocks": {
+      "patterns": [
+        {
+          "match": "\\b(begin|end|fork|join|join_any|join_none|always_comb|always_ff|always_latch|always|initial)\\b",
+          "name": "keyword.control.systemverilog"
+        }
+      ]
+    },
+    "items": {
+      "patterns": [
+        {
+          "match": "\\b(module|endmodule|interface|endinterface|program|endprogram|checker|endchecker|primitive|endprimitive|package|endpackage|subroutine|endsubroutine)\\b",
+          "name": "keyword.control.systemverilog"
+        }
+      ]
+    },
+    "Control flow":{
+      "patterns": [
+        {
+          "match":"\\b(if|else|case|casex|casez|default|endcase|for|while|repeat|break|continue|return|posedge|negedge|edge)\\b",
+          "name":"keyword.control.systemverilog"
+        }
+      ]
+    },
+    "data structure":{
+      "patterns": [
+        {
+          "match":"\\b(bit|byte|shortint|int|longint|logic|integer|reg|time|wire|struct|enum)\\b",
+          "name":"keyword.control.systemverilog"
+        }
+      ]
+    },
+    "function":{
+      "patterns": [
+        {
+          "match":"\\$(finish|stop|ln|log10|exp|sqrt|pow|floor|ceil|hypot|sin|cos|tan)\\b",
+          "name":"keyword.control.systemverilog"
+        }
+      ]
+    },
+    "comment multi": {
+      "begin": "/\\*",
+      "end": "\\*/",
+      "name": "comment.line.double-slash.systemverilog"
+    },
+    "comment signal":{
+      "patterns":[
+        {
+          "match": "//.*$",
+          "name": "comment.line.double-slash.systemverilog"
+        }
+      ]
+    }
+  }
 }

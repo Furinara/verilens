@@ -1,0 +1,154 @@
+{
+	"module": {
+		"prefix": "module",
+		"body": [
+			"module $1(",
+			"  $2",
+			");",
+			"endmodule"
+		],
+		"description": "module"
+	},
+	"input": {
+		"prefix": "input",
+		"body": [
+			"input $1"
+		],
+		"description": ""
+	},
+	"output": {
+		"prefix": "output",
+		"body": [
+			"output $1"
+		],
+		"description": ""
+	},
+	"reg": {
+		"prefix": "reg",
+		"body": [
+			"reg $1"
+		],
+		"description": ""
+	},
+	"wire": {
+		"prefix": "wire",
+		"body": [
+			"wire $1"
+		],
+		"description": ""
+	},
+	"always": {
+		"prefix": "always",
+		"body": [
+			"always @($1)begin",
+			"  $2",
+			"end"
+		],
+		"description": "always"
+	},
+	"posedge": {
+		"prefix": "posedge",
+		"body": [
+			"posedge $1"
+		],
+		"description": ""
+	},
+	"negedge": {
+		"prefix": "negedge",
+		"body": [
+			"negedge $1"
+		],
+		"description": ""
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if ($1)begin",
+			"  $2",
+			"end"
+		],
+		"description": ""
+	},
+	"else": {
+		"prefix": "else",
+		"body": [
+			"else begin",
+			"  $1",
+			"end"
+		],
+		"description": ""
+	},
+	"case": {
+		"prefix": "case",
+		"body": [
+			"else($1)",
+			"",
+			"  default:begin",
+			"    $2",
+			"  end",
+			"endcase"
+		],
+		"description": ""
+	},
+	"casex": {
+		"prefix": "casex",
+		"body": [
+			"else($1)",
+			"",
+			"  default:begin",
+			"    $2",
+			"  end",
+			"endcase"
+		],
+		"description": ""
+	},
+		"casez": {
+		"prefix": "casez",
+		"body": [
+			"elsez($1)",
+			"",
+			"  default:begin",
+			"    $2",
+			"  end",
+			"endcase"
+		],
+		"description": ""
+	},
+	"initial": {
+		"prefix": "initial",
+		"body": [
+			"initial begin",
+			"  $1",
+			"end"
+		],
+		"description": ""
+	},
+	"interface": {
+		"prefix": "interface",
+		"body": [
+			"interface $1(",
+			"  $2",
+			");",
+			"endinterface"
+		],
+		"description": ""
+	},
+	"class": {
+		"prefix": "class",
+		"body": [
+			"class $1;",
+			"  $2",
+			"endclass"
+		],
+		"description": ""
+	},
+	"class extend": {
+		"prefix": "class",
+		"body": [
+			"class $1 extend $2;",
+			"  $3",
+			"endclass"
+		],
+		"description": ""
+	}
+}

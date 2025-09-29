@@ -21,12 +21,14 @@
       ],
       "configuration": "./language-configuration.json"
     }],
-    "grammars": [
-      {
+    "grammars": [{
         "language": "systemverilog",
         "scopeName": "source.sv",
         "path": "./syntaxes/systemverilog.tmLanguage.json"
-      }
-    ]
+    }],
+    "snippets": [{
+      "language": "systemverilog",
+      "path": "./snippets/systemverilog-snippets.json"
+    }]
   }
 }
