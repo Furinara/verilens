@@ -1,0 +1,32 @@
+{
+  "name": "verilens",
+  "displayName": "VeriLens",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "systemverilog",
+      "aliases": [],
+      "extensions": [
+        ".v",
+        ".sv"
+      ],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [
+      {
+        "language": "systemverilog",
+        "scopeName": "source.sv",
+        "path": "./syntaxes/systemverilog.tmLanguage.json"
+      }
+    ]
+  }
+}

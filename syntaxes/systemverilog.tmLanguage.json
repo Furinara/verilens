@@ -1,0 +1,57 @@
+{
+  "scopeName": "source.sv",
+  "patterns": [
+    {
+      "match": "\\b(module|endmodule|task|endtask|function|endfunction|generate|endgenerate|primitive|endprimitive)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\b(begin|end|fork|join|join_any|join_none)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\b(always|assign|always_ff|always_comb)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\b(input|output|inout|logic|integer)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\b(input|output|inout|logic|integer)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\b(defparam|parameter)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\b(posedge|negedge|event)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\b(if|else|case|endcase|casex|casez|default|for)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\b(forever)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\b(highz0|highz1|)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\b(repeat|initial|wait)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "\\$(finish|stop)\\b",
+      "name": "keyword.control.systemverilog"
+    },
+    {
+      "match": "//.*$",
+      "name": "comment.line.double-slash.systemverilog"
+    }
+  ]
+}
