@@ -2,7 +2,7 @@
   "name": "verilens",
   "displayName": "VeriLens",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "furinara",
   "icon": "icon/icon.png",
   "repository": {
@@ -18,23 +18,41 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
-    "languages": [{
+    "languages": [
+    {
       "id": "systemverilog",
       "aliases": [],
       "extensions": [
-        ".v",
         ".sv"
       ],
-      "configuration": "./language-configuration.json"
-    }],
+      "configuration": "config/systemverilog.json"
+    },
+    {
+      "id": "verilog",
+      "aliases": [],
+      "extensions": [
+        ".v"
+      ],
+      "configuration": "config/verilog.json"
+    }
+  ],
     "grammars": [{
         "language": "systemverilog",
         "scopeName": "source.sv",
         "path": "./syntaxes/systemverilog.tmLanguage.json"
-    }],
+      },{
+        "language": "verilog",
+        "scopeName": "source.v",
+        "path": "./syntaxes/verilog.tmLanguage.json"
+      }
+    ],
     "snippets": [{
-      "language": "systemverilog",
-      "path": "./snippets/systemverilog-snippets.json"
-    }]
+        "language": "systemverilog",
+        "path": "./snippets/systemverilog-snippets.json"
+      },{
+        "language": "verilog",
+        "path": "./snippets/verilog-snippets.json"
+      }
+    ]
   }
 }

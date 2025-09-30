@@ -123,6 +123,20 @@
 		],
 		"description": "initial"
 	},
+    "finish": {
+		"prefix": "\\$finish",
+		"body": [
+			"\\$finish;"
+		],
+		"description": "finish"
+	},
+    "stop": {
+		"prefix": "\\$stop",
+		"body": [
+			"\\$stop;"
+		],
+		"description": "stop"
+	},
     "dumpfiles": {
 		"prefix": "\\$dumpfiles",
 		"body": [
@@ -157,33 +171,5 @@
 			"\\$display(\"$1\");"
 		],
 		"description": "display"
-	},
-	"interface": {
-		"prefix": "interface",
-		"body": [
-			"interface $1(",
-			"  $2",
-			");",
-			"endinterface"
-		],
-		"description": "interface"
-	},
-	"class": {
-		"prefix": "class",
-		"body": [
-			"class $1;",
-			"  $2",
-			"endclass"
-		],
-		"description": "class"
-	},
-	"class extend": {
-		"prefix": "class",
-		"body": [
-			"class $1 extend $2;",
-			"  $3",
-			"endclass"
-		],
-		"description": "class extend"
 	}
 }

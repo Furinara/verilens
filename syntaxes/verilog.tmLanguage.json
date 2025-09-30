@@ -31,31 +31,31 @@
 			"patterns": [
 				{
 					"match": "\\b(begin|end|fork|join|always|initial|assign)\\b",
-					"name": "keyword.control.systemverilog"
+					"name": "keyword.control.verilog"
 				},
 				{
 					"match": "\\b(if|else|case|casex|casez|default|endcase|for|while|repeat|break|continue|return|posedge|negedge|edge)\\b",
-					"name": "keyword.control.conditional.systemverilog"
+					"name": "keyword.control.conditional.verilog"
 				}
 			]
 		},
 		"Storage": {
 			"patterns": [
 				{
-					"match": "\\b(bit|byte|shortint|int|longint|logic|integer|reg|time|wire|struct|enum)\\b",
-					"name": "storage.type.systemverilog"
+					"match": "\\b(bit|byte|shortint|int|longint|integer|reg|time|wire|struct|enum)\\b",
+					"name": "storage.type.verilog"
 				},
 				{
 					"match": "\\b(input|output|inout|parameter|localparam|specparam)\\b",
-					"name": "storage.modifier.systemverilog"
+					"name": "storage.modifier.verilog"
 				}
 			]
 		},
 		"Entity": {
 			"patterns": [
 				{
-					"match": "\\b(module|endmodule|interface|endinterface|package|endpackage|program|endprogram|class|endclass|primitive|endprimitive|config|endconfig|covergroup|endgroup|checker|endchecker)\\b",
-					"name": "entity.name.type.systemverilog"
+					"match": "\\b(module|endmodule)\\b",
+					"name": "entity.name.type.verilog"
 				}
 			]
 		},
@@ -66,7 +66,7 @@
 			"patterns": [
 				{
 					"match": "\\b((\\d*\\'d\\d+)|(\\d+)|(\\d*\\'[hH][0-9ABCDEFabcdef]+)|(\\d*\\'[bB][01]+)|(\\d*\\'[oO][0-7]+))\\b",
-					"name": "constant.numeric.systemverilog"
+					"name": "constant.numeric.verilog"
 				}
 			]
 		},
@@ -74,7 +74,7 @@
 			"patterns": [
 				{
 					"match": "\\$(display|write|monitor|strobe|fopen|fclose|fdisplay|fwrite|fmonitor|fstrobe|readmemb|readmemh|random|time|realtime|finish|stop|exit|cast|size|bits|dimensions|left|right|low|high|increment|clog2|ln|log10|exp|sqrt|pow|floor|ceil|hypot|sin|cos|tan|countones|onehot|onehot0|isunknown|testplusargs|valueplusargs|asserton|assertoff|assertkill|asyncandarray|asyncandplane|asyncnandarray|asyncnandplane|asyncorarray|asyncorplane|asyncnorarray|asyncnorplane|fsdbDumpfile|fsdbDumovars|dumpfiles|dumpvars)\\b",
-					"name": "support.function.systemverilog"
+					"name": "support.function.verilog"
 				}
 			]
 		},
@@ -82,7 +82,7 @@
 			"patterns": [
 				{
 					"match":"(\"[^\"]*\")|('[^']'*)",
-					"name": "string.quoted.systemverilog"
+					"name": "string.quoted.verilog"
 				}
 			]
 		},
@@ -90,12 +90,12 @@
 			"patterns": [
 				{
 					"match": "//.*$",
-					"name": "comment.line.double-slash.systemverilog"
+					"name": "comment.line.double-slash.verilog"
 				},
 				{
 					"begin": "/\\*",
 					"end": "\\*/",
-					"name": "comment.line.double-slash.systemverilog"
+					"name": "comment.line.double-slash.verilog"
 				}
 			]
 		}
