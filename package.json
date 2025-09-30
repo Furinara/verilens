@@ -3,6 +3,12 @@
   "displayName": "VeriLens",
   "description": "",
   "version": "0.0.1",
+  "publisher": "furinara",
+  "icon": "icon/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Furinara/verilens"
+  },
   "engines": {
     "vscode": "^1.104.0"
   },
