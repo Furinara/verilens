@@ -3,7 +3,7 @@
 		"prefix": "module",
 		"body": [
 			"module $1(",
-			"  $2",
+			"\t$2",
 			");",
 			"endmodule"
 		],
@@ -41,7 +41,7 @@
 		"prefix": "always",
 		"body": [
 			"always @($1)begin",
-			"  $2",
+			"\t$2",
 			"end"
 		],
 		"description": "always"
@@ -63,8 +63,8 @@
 	"if": {
 		"prefix": "if",
 		"body": [
-			"if ($1)begin",
-			"  $2",
+			"if($1)begin",
+			"\t$2",
 			"end"
 		],
 		"description": "if"
@@ -73,7 +73,7 @@
 		"prefix": "else",
 		"body": [
 			"else begin",
-			"  $1",
+			"\t$1",
 			"end"
 		],
 		"description": "else"
@@ -81,11 +81,11 @@
 	"case": {
 		"prefix": "case",
 		"body": [
-			"else($1)",
+			"case($1)",
 			"",
-			"  default:begin",
-			"    $2",
-			"  end",
+			"\tdefault:begin",
+			"\t\t$2",
+			"\tend",
 			"endcase"
 		],
 		"description": "case"
@@ -93,11 +93,11 @@
 	"casex": {
 		"prefix": "casex",
 		"body": [
-			"else($1)",
+			"casex($1)",
 			"",
-			"  default:begin",
-			"    $2",
-			"  end",
+			"\tdefault:begin",
+			"\t\t$2",
+			"\tend",
 			"endcase"
 		],
 		"description": "casex"
@@ -105,11 +105,11 @@
 		"casez": {
 		"prefix": "casez",
 		"body": [
-			"elsez($1)",
+			"casez($1)",
 			"",
-			"  default:begin",
-			"    $2",
-			"  end",
+			"\tdefault:begin",
+			"\t\t$2",
+			"\tend",
 			"endcase"
 		],
 		"description": "casez"
@@ -118,10 +118,24 @@
 		"prefix": "initial",
 		"body": [
 			"initial begin",
-			"  $1",
+			"\t$1",
 			"end"
 		],
 		"description": "initial"
+	},
+    "finish": {
+		"prefix": "\\$finish",
+		"body": [
+			"\\$finish;"
+		],
+		"description": "finish"
+	},
+    "stop": {
+		"prefix": "\\$stop",
+		"body": [
+			"\\$stop;"
+		],
+		"description": "stop"
 	},
     "dumpfiles": {
 		"prefix": "\\$dumpfiles",
@@ -158,11 +172,22 @@
 		],
 		"description": "display"
 	},
+	"generate":{
+		"prefix": "generate",
+		"body": [
+			"generate;",
+			"\t$1",
+			"endgenerate;"
+		],
+		"description": "display"
+	},
+
+
 	"interface": {
 		"prefix": "interface",
 		"body": [
 			"interface $1(",
-			"  $2",
+			"\t$2",
 			");",
 			"endinterface"
 		],
@@ -172,7 +197,7 @@
 		"prefix": "class",
 		"body": [
 			"class $1;",
-			"  $2",
+			"\t$2",
 			"endclass"
 		],
 		"description": "class"
@@ -181,7 +206,7 @@
 		"prefix": "class",
 		"body": [
 			"class $1 extend $2;",
-			"  $3",
+			"\t$3",
 			"endclass"
 		],
 		"description": "class extend"
