@@ -2,7 +2,7 @@
   "name": "verilens",
   "displayName": "VeriLens",
   "description": "",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "furinara",
   "icon": "icon/icon.png",
   "repository": {
@@ -23,7 +23,8 @@
       "id": "systemverilog",
       "aliases": [],
       "extensions": [
-        ".sv"
+        ".sv",
+        ".svh"
       ],
       "configuration": "config/systemverilog.json"
     },
@@ -31,7 +32,8 @@
       "id": "verilog",
       "aliases": [],
       "extensions": [
-        ".v"
+        ".v",
+        ".vh"
       ],
       "configuration": "config/verilog.json"
     }

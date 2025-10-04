@@ -42,7 +42,7 @@
 		"Storage": {
 			"patterns": [
 				{
-					"match": "\\b(bit|byte|shortint|int|longint|integer|reg|time|wire|struct|enum|genvars)\\b",
+					"match": "\\b(bit|byte|shortint|int|longint|integer|reg|time|wire|struct|enum|genvars|void)\\b",
 					"name": "storage.type.verilog"
 				},
 				{
@@ -73,7 +73,7 @@
 		"Support": {
 			"patterns": [
 				{
-					"match": "\\$(display|write|monitor|strobe|fopen|fclose|fdisplay|fwrite|fmonitor|fstrobe|readmemb|readmemh|random|time|realtime|finish|stop|exit|cast|size|bits|dimensions|left|right|low|high|increment|clog2|ln|log10|exp|sqrt|pow|floor|ceil|hypot|sin|cos|tan|countones|onehot|onehot0|isunknown|testplusargs|valueplusargs|asserton|assertoff|assertkill|asyncandarray|asyncandplane|asyncnandarray|asyncnandplane|asyncorarray|asyncorplane|asyncnorarray|asyncnorplane|fsdbDumpfile|fsdbDumovars|dumpfile|dumpvars)\\b",
+					"match": "\\$(display|write|monitor|strobe|fopen|fclose|fdisplay|fwrite|fmonitor|fstrobe|readmemb|readmemh|random|time|realtime|finish|stop|exit|cast|size|bits|dimensions|left|right|low|high|increment|clog2|ln|log10|exp|sqrt|pow|floor|ceil|hypot|sin|cos|tan|countones|onehot|onehot0|isunknown|testplusargs|valueplusargs|asserton|assertoff|assertkill|asyncandarray|asyncandplane|asyncnandarray|asyncnandplane|asyncorarray|asyncorplane|asyncnorarray|asyncnorplane|fsdbDumpfile|fsdbDumpvars|dumpfile|dumpvars)\\b",
 					"name": "support.function.verilog"
 				}
 			]
