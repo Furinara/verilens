@@ -34,12 +34,16 @@
 					"name": "keyword.control.systemverilog"
 				},
 				{
-					"match": "\\b(if|else|case|casex|casez|default|endcase|for|while|repeat|break|continue|return|posedge|negedge|edge)\\b",
+					"match": "\\b(if|else|case|casex|casez|default|endcase|for|while|repeat|break|continue|return|posedge|negedge|edge|assert)\\b",
 					"name": "keyword.control.conditional.systemverilog"
 				},
 				{
 					"match": "\\b(virtual|class|extends|endclass|this|super|local|protected|static|extern)\\b",
 					"name": "keyword.control.oop.systemverilog"
+				},
+				{
+					"match": "(\\|->|\\|=>)",
+					"name": "keyword.control.sva.systemverilog"
 				}
 			]
 		},
@@ -58,7 +62,7 @@
 		"Entity": {
 			"patterns": [
 				{
-					"match": "\\b(module|endmodule|interface|endinterface|package|endpackage|program|endprogram|primitive|endprimitive|config|endconfig|covergroup|endgroup|checker|endchecker|function|endfunction|task|endtask|generate|endgenerate)\\b",
+					"match": "\\b(module|endmodule|interface|endinterface|package|endpackage|program|endprogram|primitive|endprimitive|config|endconfig|covergroup|endgroup|checker|endchecker|function|endfunction|task|endtask|generate|endgenerate|sequence|endsequence|property|endproperty)\\b",
 					"name": "entity.name.type.systemverilog"
 				}
 			]
@@ -77,7 +81,7 @@
 		"Support": {
 			"patterns": [
 				{
-					"match": "\\$(display|write|monitor|strobe|fopen|fclose|fdisplay|fwrite|fmonitor|fstrobe|readmemb|readmemh|random|time|realtime|finish|stop|exit|cast|size|bits|dimensions|left|right|low|high|increment|clog2|ln|log10|exp|sqrt|pow|floor|ceil|hypot|sin|cos|tan|countones|onehot|onehot0|isunknown|testplusargs|valueplusargs|asserton|assertoff|assertkill|asyncandarray|asyncandplane|asyncnandarray|asyncnandplane|asyncorarray|asyncorplane|asyncnorarray|asyncnorplane|fsdbDumpfile|fsdbDumpvars|dumpfile|dumpvars)\\b",
+					"match": "\\$(display|error|write|monitor|strobe|fopen|fclose|fdisplay|fwrite|fmonitor|fstrobe|readmemb|readmemh|random|time|realtime|finish|stop|exit|cast|size|bits|dimensions|left|right|low|high|increment|clog2|ln|log10|exp|sqrt|pow|floor|ceil|hypot|sin|cos|tan|countones|onehot|onehot0|isunknown|testplusargs|valueplusargs|asserton|assertoff|assertkill|asyncandarray|asyncandplane|asyncnandarray|asyncnandplane|asyncorarray|asyncorplane|asyncnorarray|asyncnorplane|fsdbDumpfile|fsdbDumpvars|dumpfile|dumpvars)\\b",
 					"name": "support.function.systemverilog"
 				}
 			]

@@ -210,5 +210,43 @@
 			"endclass"
 		],
 		"description": "class extends"
+	},
+	"property": {
+		"prefix": "property",
+		"body": [
+			"property $1;",
+			"\t$2;",
+			"endproperty"
+		],
+		"description": "property"
+	},
+	"assert": {
+		"prefix": "assert",
+		"body": [
+			"assert ($1)",
+			"\t$2;",
+			"else",
+			"\t$3;"
+		],
+		"description": "assert"
+	},
+	"assert property": {
+		"prefix": "assert property",
+		"body": [
+			"assert property($1)",
+			"\t$2;",
+			"else",
+			"\t$3;"
+		],
+		"description": "assert property"
+	},
+	"sequence": {
+		"prefix": "sequence",
+		"body": [
+			"sequence\t($1)",
+			"\t$2",
+			"endsequence"
+		],
+		"description": "sequence"
 	}
 }
