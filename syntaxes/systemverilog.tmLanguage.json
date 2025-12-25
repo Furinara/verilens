@@ -30,11 +30,11 @@
 		"Keywords": {
 			"patterns": [
 				{
-					"match": "\\b(begin|end|fork|join|always|initial|assign)\\b",
+					"match": "\\b(begin|end|fork|join|always|initial|forever|assign)\\b",
 					"name": "keyword.control.systemverilog"
 				},
 				{
-					"match": "\\b(if|else|case|casex|casez|default|endcase|for|while|repeat|break|continue|return|posedge|negedge|edge|assert)\\b",
+					"match": "\\b(if|else|case|casex|casez|default|endcase|for|while|repeat|break|continue|return|posedge|negedge|edge|assert|function|endfunction|task|endtask)\\b",
 					"name": "keyword.control.conditional.systemverilog"
 				},
 				{
@@ -50,7 +50,7 @@
 		"Storage": {
 			"patterns": [
 				{
-					"match": "\\b(bit|byte|shortint|int|longint|logic|integer|reg|time|wire|struct|enum|string|genvars|void)\\b",
+					"match": "\\b(bit|byte|shortint|int|longint|logic|integer|reg|time|wire|real|event|tri|tri0|tri1|wand|wor|supply0|supply1|struct|enum|string|genvar|void|var|automatic)\\b",
 					"name": "storage.type.systemverilog"
 				},
 				{
@@ -62,7 +62,7 @@
 		"Entity": {
 			"patterns": [
 				{
-					"match": "\\b(module|endmodule|interface|endinterface|package|endpackage|program|endprogram|primitive|endprimitive|config|endconfig|covergroup|endgroup|checker|endchecker|function|endfunction|task|endtask|generate|endgenerate|sequence|endsequence|property|endproperty)\\b",
+					"match": "\\b(module|endmodule|interface|endinterface|package|endpackage|program|endprogram|primitive|endprimitive|config|endconfig|covergroup|endgroup|checker|endchecker|generate|endgenerate|sequence|endsequence|property|endproperty)\\b",
 					"name": "entity.name.type.systemverilog"
 				}
 			]
@@ -73,7 +73,7 @@
 		"Constants": {
 			"patterns": [
 				{
-					"match": "\\b((\\d*\\'d\\d+)|(\\d+)|(\\d*\\'[hH][0-9ABCDEFabcdef]+)|(\\d*\\'[bB][01]+)|(\\d*\\'[oO][0-7]+))\\b",
+					"match": "\\b((\\d*'d\\d+)|(\\d+)|(\\d*'[hH][0-9ABCDEFabcdef]+)|(\\d*'[bB][01]+)|(\\d*'[oO][0-7]+))\\b",
 					"name": "constant.numeric.systemverilog"
 				}
 			]
@@ -81,7 +81,7 @@
 		"Support": {
 			"patterns": [
 				{
-					"match": "\\$(display|error|write|monitor|strobe|fopen|fclose|fdisplay|fwrite|fmonitor|fstrobe|readmemb|readmemh|random|time|realtime|finish|stop|exit|cast|size|bits|dimensions|left|right|low|high|increment|clog2|ln|log10|exp|sqrt|pow|floor|ceil|hypot|sin|cos|tan|countones|onehot|onehot0|isunknown|testplusargs|valueplusargs|asserton|assertoff|assertkill|asyncandarray|asyncandplane|asyncnandarray|asyncnandplane|asyncorarray|asyncorplane|asyncnorarray|asyncnorplane|fsdbDumpfile|fsdbDumpvars|dumpfile|dumpvars)\\b",
+					"match": "\\$(display|error|write|monitor|strobe|fopen|fclose|fdisplay|fwrite|fscanf|fmonitor|fstrobe|readmemb|readmemh|random|signed|time|realtime|finish|stop|exit|cast|size|bits|dimensions|left|right|low|high|increment|clog2|ln|log10|exp|sqrt|pow|floor|ceil|hypot|sin|cos|tan|countones|onehot|onehot0|isunknown|testplusargs|valueplusargs|asserton|assertoff|assertkill|asyncandarray|asyncandplane|asyncnandarray|asyncnandplane|asyncorarray|asyncorplane|asyncnorarray|asyncnorplane|fsdbDumpfile|fsdbDumpvars|dumpfile|dumpvars)\\b",
 					"name": "support.function.systemverilog"
 				}
 			]

@@ -78,6 +78,15 @@
 		],
 		"description": "else"
 	},
+	"for": {
+		"prefix": "for",
+		"body": [
+			"for($1;$2;$3)begin",
+			"\t$4",
+			"end"
+		],
+		"description": "for"
+	},
 	"case": {
 		"prefix": "case",
 		"body": [
@@ -102,7 +111,7 @@
 		],
 		"description": "casex"
 	},
-		"casez": {
+	"casez": {
 		"prefix": "casez",
 		"body": [
 			"casez($1)",
@@ -123,6 +132,15 @@
 		],
 		"description": "initial"
 	},
+	"forever": {
+		"prefix": "forever",
+		"body": [
+			"forever begin",
+			"\t$1",
+			"end"
+		],
+		"description": "forever"
+	},
     "finish": {
 		"prefix": "\\$finish",
 		"body": [
@@ -136,6 +154,34 @@
 			"\\$stop;"
 		],
 		"description": "stop"
+	},
+	"fopen": {
+		"prefix": "\\$fopen",
+		"body": [
+			"\\$fopen($1);"
+		],
+		"description": "fopen"
+	},
+	"fclose": {
+		"prefix": "\\$fclose",
+		"body": [
+			"\\$fclose($1);"
+		],
+		"description": "fclose"
+	},
+	"fwrite": {
+		"prefix": "\\$fwrite",
+		"body": [
+			"\\$fwrite($1);"
+		],
+		"description": "fwrite"
+	},
+	"fscanf": {
+		"prefix": "\\$fscanf",
+		"body": [
+			"\\$fscanf($1);"
+		],
+		"description": "fscanf"
 	},
     "dumpfiles": {
 		"prefix": "\\$dumpfiles",
@@ -172,12 +218,19 @@
 		],
 		"description": "display"
 	},
+	"genvar":{
+		"prefix": "genvar",
+		"body": [
+			"genvar $1;"
+		],
+		"description": "genvar"
+	},
 	"generate":{
 		"prefix": "generate",
 		"body": [
-			"generate;",
+			"generate",
 			"\t$1",
-			"endgenerate;"
+			"endgenerate"
 		],
 		"description": "display"
 	},
